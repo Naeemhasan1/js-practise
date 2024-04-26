@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJS Tag</title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>current second : <%= second %></p>
+    <% if (second % 2 ===0){ %>
+    <ul>
+      <% items.forEach((fruit)=>{ %>
+      <li><%= fruit %></li>
+      <% }) %>
+    </ul>
+    <% } else { %>
+    <p>No items to display.</p>
+    <% } %>
+  </body>
+</html>
+<!-- <%# for (i=0;i < items.length;i++){ %>
+<li> items[i] %></li>
+ } %> %> -->
