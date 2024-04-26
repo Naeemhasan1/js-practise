@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
     items: ["Apple", "Orange", "Mango"],
     htmlContent: "<strong>This is some strong text</strong>",
   };
-  console.log(data.items);
+  // console.log(data.items);
   res.render("index.ejs", data);
 });
 
