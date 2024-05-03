@@ -19,6 +19,7 @@ app.get("/", (req, res) => {
 app.post("/recipe", (req, res) => {
   //Step 3: Write your code here to make this behave like the solution website.
   let choice = req.body.choice;
+  // console.log(choice);
   if (choice === "chicken") {
     data = JSON.parse(recipeJSON)[0];
   } else if (choice === "beef") {
@@ -27,6 +28,7 @@ app.post("/recipe", (req, res) => {
     data = JSON.parse(recipeJSON)[2];
   } else {
   }
+  res.redirect("/");
 
   //Step 4: Add code to views/index.ejs to use the recieved recipe object.
 });
